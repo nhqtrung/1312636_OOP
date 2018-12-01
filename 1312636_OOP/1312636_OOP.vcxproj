@@ -116,11 +116,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CustomArray.h" />
+    <ClInclude Include="File.h" />
     <ClInclude Include="Monomial.h" />
+    <ClInclude Include="Polynomial.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CustomArray.cpp" />
+    <ClCompile Include="File.cpp" />
     <ClCompile Include="Monomial.cpp" />
+    <ClCompile Include="Polynomial.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

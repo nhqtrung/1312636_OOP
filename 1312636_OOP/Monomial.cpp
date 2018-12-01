@@ -1,4 +1,5 @@
 #include "Monomial.h"
+#include <iostream>
 
 
 Monomial::Monomial()
@@ -7,9 +8,10 @@ Monomial::Monomial()
 	n = 0;
 }
 
-Monomial::Monomial(unsigned int m_N, float m_A) {
+Monomial::Monomial(unsigned int m_N, int m_A) {
 	n = m_N;
 	a = m_A;
+	std::cout << "Don Thuc " << n << "x^" << a << std::endl;
 }
 
 Monomial::Monomial(const Monomial& m_Monomial) {

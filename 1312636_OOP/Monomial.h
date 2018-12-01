@@ -5,10 +5,10 @@ class Monomial
 {
 private:
 	unsigned int n;
-	float a;
+	int a;
 public:
 	Monomial();
-	Monomial(unsigned int m_N, float m_A);
+	Monomial(unsigned int m_N, int m_A);
 	Monomial(const Monomial& m_Monomial);
 	~Monomial();
 	Monomial& operator=(Monomial& m_Monomial);

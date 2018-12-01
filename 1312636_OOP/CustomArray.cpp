@@ -1,5 +1,6 @@
 #include <iostream>
 #include "CustomArray.h"
+#include "Monomial.h"
 
 template <class T>
 CustomArray<T>::CustomArray(int m_N) {
@@ -29,7 +30,6 @@ template <class T>
 void CustomArray<T>::printArr() {
 	T *p_Temp = p_Begin;
 	while (p_Temp != p_End) {
-		std::cout << *p_Temp;
 		p_Temp += 1;
 	}
 	std::cout << "\n";
@@ -53,7 +53,6 @@ CustomArray<T>::CustomArray() {
 template <class T>
 CustomArray<T>::~CustomArray()
 {
-	std::cout << "Deconstructor" << std::endl;
 	delete p_Begin, p_End, p_LowerBound, p_UpperBound;
 	delete[] arr;
 }
@@ -236,4 +235,4 @@ void CustomArray<T>::erase(int index) {
 //	}
 //}
 
-template class CustomArray<int>;
+template class CustomArray<Monomial>;
